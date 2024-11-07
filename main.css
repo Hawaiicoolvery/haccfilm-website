@@ -1,0 +1,109 @@
+.sliding {
+    animation: slider 30s ease-in-out infinite alternate;
+}
+.sliding #sliding-immage1{
+background-image: url(assets/cenematrography/1729439988135.png);
+background-size: cover;
+}
+.sliding #sliding-immage2{
+background-image: url(assets/cenematrography/58e2dd06-000f-4bbf-ac2a-cf7a72ca3afb.png);
+background-size: cover;
+}
+
+.title1{
+    height: 450px;
+    color: beige;
+    background: url(assets/cenematrography/1f935c0e-897f-4c18-bac9-0c532ed09236.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.title1 h1 {
+    font-weight: bolder;
+}
+.box1{
+    border: 1px solid;
+    height: 100px;
+    width: cover;
+    border-color: red;
+    position: center;
+    background-color: bisque;
+}
+.box11 h1{
+    color:black;
+    position: center;
+}
+.box2{
+    border: 1px solid;
+    height: 30px;
+    width: cover;
+    border-color: red;
+    position: center;
+}
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+.grid-con{
+    display: grid;
+    grid-template-columns :repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+}
+
+.grid-con img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: small;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.container4{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    align-items: center;
+    justify-items: center;
+    font-size: smaller;
+    text-align: center;
+    overflow: hidden;
+}
+
+.btn-black{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 20%;
+    padding: 0.5rem 1rem;
+    
+}
+.word3{
+    padding: 1rem;
+}
+header{
+    position: sticky;
+    top: 0;
+}
